@@ -1,0 +1,32 @@
+#wrapper{width:80%; margin-left:auto; margin-right:auto; min-width:960px;
+             max-width:2048px;background-color:white; padding:20px; padding-top: 2em}
+
+body{background-image: url("stars.jpg");}
+
+header{background-color: #9BC1C2; color:rebeccapurple; text-align:center;margin-left:auto;
+    margin-right:auto; height: 50px; padding:30px; font-size: xx-large; padding-bottom: 4em; font-family: 'Russo One', sans-serif;}
+
+li{font-size:100%; font-family: 'Questrial', sans-serif;}
+
+nav a:visited{color: slateblue}
+
+nav a:hover{color: #9BC1C2; background-color: black;
+    transition: background-color 2s ease-out;}
+
+footer{background-color: #9BC1C2; font-style: italic; text-align: center; margin-left: auto;
+    margin-right: auto; font-size: small; padding:1em;}
+
+#gamesPage{padding-bottom: 5em}
+
+label,legend{font-family: 'Questrial', sans-serif;}
+
+#moon{float:right;}
+
+#gamesTitle,#welcomeTitle,#zodiacTitle{text-align: center; font-size: 200%; padding-top: 1em; font-family: 'Russo One', sans-serif;}
+
+#babyNameGenerator{float:right;width: 50%}
+
+#sunMoonPic{float:right; position: relative; left:500px}
+
+
+

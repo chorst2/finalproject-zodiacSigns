@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zodiac Games</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper" class="container w-75">
+    <header>
+        <h1>Zodiac Signs</h1>
+        <nav>
+            <ul class="nav justify-content-center" >
+                <li class="nav-item" id="home"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item" id="zodiac"><a class="nav-link" href="zodiac.html">Zodiacs</a></li>
+                <li class="nav-item" id="game"><a class="nav-link" href="games.html">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 id="gamesTitle">Games</h2><br><br>
+
+    <div id="gamesPage">
+                <div id="babyNameGenerator">
+                        <fieldset>
+                            <legend>Baby Name Generator</legend>
+                            <br><br>
+                            <h4 id="randomBoyName"></h4><br><br>
+                            <button id="boyNameGenerator">Boy Name</button>
+                            <br><br><br>
+                            <h4 id="randomGirlName"></h4><br><br>
+                            <button id="girlNameGenerator">Girl Name</button>
+                        </fieldset>
+                </div>
+                <div id="loveCompatibilityCalculator">
+    <form id="loveCalc">
+
+       <fieldset>
+           <legend>Love Compatibility Calculator</legend><br>
+           <div class="form-group">
+           <label for="userFirstName">Your First Name: </label>
+           <input type="text" name="userFirstName" id="userFirstName"><br><br>
+           </div>
+           <div class="form-group">
+           <label for="userZodiacSign">Your Zodiac Sign: </label>
+           <select id="userZodiacSign" name="userZodiacSign">
+               <option value="aries">Aries</option>
+               <option value="taurus">Taurus</option>
+               <option value="gemini">Gemini</option>
+               <option value="cancer">Cancer</option>
+               <option value="leo">Leo</option>
+               <option value="virgo">Virgo</option>
+               <option value="libra">Libra</option>
+               <option value="scorpio">Scorpio</option>
+               <option value="sagittarius">Sagittarius</option>
+               <option value="capricorn">Capricorn</option>
+               <option value="aquarius">Aquarius</option>
+               <option value="pisces">Pisces</option>
+           </select><br><br><br><br><br>
+           </div>
+           <div class="form-group">
+           <label for="crushFirstName">Crushes First Name: </label>
+           <input type="text" name="crushFirstName" id="crushFirstName"><br><br>
+           </div>
+           <div class="form-group">
+           <label for="crushZodiacSign">Crushes Zodiac Sign: </label>
+           <select id="crushZodiacSign" name="crushZodiacSign">
+               <option value="aries">Aries</option>
+               <option value="taurus">Taurus</option>
+               <option value="gemini">Gemini</option>
+               <option value="cancer">Cancer</option>
+               <option value="leo">Leo</option>
+               <option value="virgo">Virgo</option>
+               <option value="libra">Libra</option>
+               <option value="scorpio">Scorpio</option>
+               <option value="sagittarius">Sagittarius</option>
+               <option value="capricorn">Capricorn</option>
+               <option value="aquarius">Aquarius</option>
+               <option value="pisces">Pisces</option>
+           </select><br>
+           </div>
+           <button id="submitLoveCalc">Get Compatibility</button><br><br><br>
+           <div id="calculatorOutput">
+           <span id="loveCalcOutput"></span>
+               <img src="sunstarmoon.jpg" height="auto" width="237" id="sunMoonPic"  alt="sun star and moon"/>
+           </div>
+
+       </fieldset>
+
+        </form><br><br>
+                </div>
+    </div>
+
+
+
+    <img src="moon.png" height="auto" width="100" id="moon" alt="moon"/>
+
+<footer>
+    <a href="https://www.astrology-zodiac-signs.com/" target="_blank">Zodiac Information Source</a>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="gamesCode.js"></script>
+
+</body>
+</html>
