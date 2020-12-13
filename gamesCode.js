@@ -6,17 +6,45 @@ $(document).ready(
         $("#boyNameGenerator").click(getBoyName);
         //when the button with the id girlNameGenerator is clicked run the function getGirlName
         $("#girlNameGenerator").click(getGirlName);
-        //when the button with the id submitLoveCalc is clicked run the function loveCalculator
-        $("#submitLoveCalc").click(loveCalculator);
 
+
+        //form validation
+        var myRules =
+            {
+                userFirstName:
+                    {
+                        required: true
+                    },
+                crushFirstName:
+                    {
+                        required:true
+                    }
+            };
+        var myMessages =
+            {
+                userFirstName:
+                    {
+                        required: "Must enter a name"
+                    },
+                crushFirstName:
+                    {
+                        required: "Must enter a name"
+                    }
+            };
+        $("form").validate(
+            {
+                submitHandler: loveCalculator,
+                rules: myRules,
+                messages: myMessages
+            }
+        );
 
 
 
         //any other functions (calculate trip, roll die, etc.)
 
-        function loveCalculator(event)
+        function loveCalculator()
         {
-            event.preventDefault();
             //get users first name
             var userFirstName = $("#userFirstName").val();
             //get the crush's first name
